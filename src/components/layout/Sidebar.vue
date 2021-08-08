@@ -38,7 +38,8 @@ export default defineComponent({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .sidebar {
-    background-color: var(--primary-50);
+    // background-color: var(--primary-50);
+    background: linear-gradient(to left, var(--primary-50), var(--primary-75));
     color: var(--white);
     width: var(--sidebar-width-expand);
     height: 100vh;
