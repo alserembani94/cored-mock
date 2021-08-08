@@ -1,0 +1,62 @@
+@import 'config/fonts';
+@import 'config/variables';
+
+// Import default html element styles
+@import 'config/text';
+@import 'config/button';
+
+
+:root {
+
+    /**
+    * This is root size of all fonts
+    * Later will use scale unit only e.g. ch and rem
+    * 1rem & 1ch = 16px
+    * For more information regarding units in css,
+    * You can refer here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+    */
+
+    font-family: var(--font-main);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--black);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-background);
+}
+
+#app {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3ch;
+
+    & > div {
+        flex: 1 0 280px;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

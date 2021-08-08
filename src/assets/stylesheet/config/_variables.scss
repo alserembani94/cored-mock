@@ -1,0 +1,74 @@
+:root {
+    --font-main: "Poppins", Avenir, Helvetica, Arial, sans-serif;
+
+    // Color Profile
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --body-background: #F6F6F7;
+
+
+    --primary-0: #99B9EE;
+    --primary-25: #5B8FE3;
+    --primary-50: #3273DC;
+    --primary-75: #285CB0;
+    --primary-100: #1E4584;
+
+    --secondary-0: #80E8D9;
+    --secondary-25: #33DAC1;
+    --secondary-50: #00D1B2;
+    --secondary-75: #00A78E;
+    --secondary-100: #007D6B;
+
+    --info-0: #79C4F5;
+    --info-25: #4DB0F1;
+    --info-50: #209CEE;
+    --info-75: #1A7DBE;
+    --info-100: #135E8F;
+
+    --light-0: #F9F9F9;
+    --light-25: #F7F7F7;
+    --light-50: #F5F5F5;
+    --light-75: #C4C4C4;
+    --light-100: #939393;
+
+    --dark-0: #868686;
+    --dark-25: #5E5E5E;
+    --dark-50: #363636;
+    --dark-75: #2B2B2B;
+    --dark-100: #202020;
+
+    --success-0: #7BE3A0;
+    --success-25: #4FDA80;
+    --success-50: #23D160;
+    --success-75: #1CA74D;
+    --success-100: #157D3A;
+
+    --warning-0: #FFEB9A;
+    --warning-25: #FFE479;
+    --warning-50: #FFDD57;
+    --warning-75: #CCB146;
+    --warning-100: #998534;
+
+    --danger-0: #FF88A0;
+    --danger-25: #FF6080;
+    --danger-50: #FF3860;
+    --danger-75: #CC2D4D;
+    --danger-100: #99223A;
+
+    --visited: #C301E2;
+
+    // Button Config
+    --button-padding-small: 0.375rem 0.75rem;
+    --button-padding-normal: 0.5rem 1.0rem;
+    --button-padding-large: 0.625rem 1.25rem;
+    --button-font-small: 0.75rem;
+    --button-font-normal: 1.0rem;
+    --button-font-large: 1.25rem;
+    --button-border-radius: 4px;
+
+    // Dimensions
+    --sidebar-width-expand: 250px;
+    --sidebar-width-collapse: 70px;
+    --header-height: 80px;
+}

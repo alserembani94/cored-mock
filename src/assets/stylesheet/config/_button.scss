@@ -1,0 +1,401 @@
+button {
+    // DEFAULT STYLE
+    padding: var(--button-padding-normal);
+    font-size: 1rem;
+    background-color: var(--primary-50);
+    color: var(--white);
+    border-radius: var(--button-border-radius);
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    // To make sure button content is centered
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // Microinteractions
+    transition: all 0.3s ease;
+
+    // BUTTON SIZING
+
+    &.small {
+        padding: var(--button-padding-small);
+        font-size: var(--button-font-small);
+    }
+
+    &.normal {
+        padding: var(--button-padding-normal);
+        font-size: var(--button-font-normal);
+    }
+
+    &.large {
+        padding: var(--button-padding-large);
+        font-size: var(--button-font-large);
+    }
+
+    // BUTTON STYLE
+
+    &.solid_primary {
+        background-color: var(--primary-50);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--primary-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--primary-50);
+            background-color: var(--primary-25);
+        }
+
+        &:disabled {
+            background-color: var(--primary-0);
+        }
+
+        &[data-active=true] {
+            background-color: var(--primary-75);
+        }
+    }
+
+    &.solid_secondary {
+        background-color: var(--secondary-50);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--secondary-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--secondary-50);
+            background-color: var(--secondary-25);
+        }
+
+        &:disabled {
+            background-color: var(--secondary-0);
+        }
+
+        &[data-active=true] {
+            background-color: var(--secondary-75);
+        }
+    }
+
+    &.solid_info {
+        background-color: var(--info-50);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--info-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--info-50);
+            background-color: var(--info-25);
+        }
+
+        &:disabled {
+            background-color: var(--info-0);
+        }
+
+        &[data-active=true] {
+            background-color: var(--info-75);
+        }
+    }
+
+    &.solid_success {
+        background-color: var(--success-50);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--success-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--success-50);
+            background-color: var(--success-25);
+        }
+
+        &:disabled {
+            background-color: var(--success-0);
+        }
+
+        &[data-active=true] {
+            background-color: var(--success-75);
+        }
+    }
+
+    &.solid_warning {
+        background-color: var(--warning-50);
+        color: var(--black);
+
+        &:hover {
+            background-color: var(--warning-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--warning-50);
+            background-color: var(--warning-25);
+        }
+
+        &:disabled {
+            background-color: var(--warning-0);
+        }
+
+        &[data-active=true] {
+            background-color: var(--warning-75);
+        }
+    }
+
+    &.solid_danger {
+        background-color: var(--danger-50);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--danger-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--danger-50);
+            background-color: var(--danger-25);
+        }
+
+        &:disabled {
+            background-color: var(--danger-0);
+        }
+
+        &[data-active=true] {
+            background-color: var(--danger-75);
+        }
+    }
+
+    &.solid_dark {
+        background-color: var(--dark-50);
+
+        &:hover {
+            background-color: var(--dark-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--dark-50);
+            background-color: var(--dark-25);
+        }
+
+        &:disabled {
+            background-color: var(--dark-0);
+        }
+
+        &[data-active=true] {
+            background-color: var(--dark-75);
+        }
+    }
+
+    &.solid_light {
+        background-color: var(--light-50);
+        color: var(--black);
+
+        &:hover {
+            background-color: var(--light-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--light-50);
+            background-color: var(--light-25);
+        }
+
+        &:disabled {
+            background-color: var(--light-0);
+        }
+
+        &[data-active=true] {
+            background-color: var(--light-75);
+        }
+    }
+
+    &.outline_primary,
+    &.outline_secondary,
+    &.outline_info,
+    &.outline_success,
+    &.outline_warning,
+    &.outline_danger,
+    &.outline_dark,
+    &.outline_light {
+        background-color: transparent; // Can also be transparent?
+    }
+
+    &.outline_primary {
+        box-shadow: inset 0px 0px 0px 1px var(--primary-50);
+        color: var(--primary-50);
+
+        &:hover {
+            box-shadow: inset 0px 0px 0px 1px var(--primary-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--primary-50);
+            border: var(--primary-25);
+        }
+
+        &:disabled {
+            box-shadow: inset 0px 0px 0px 1px var(--primary-0);
+        }
+
+        &[data-active=true] {
+            box-shadow: inset 0px 0px 0px 1px var(--primary-75);
+        }
+    }
+
+    &.outline_secondary {
+        box-shadow: inset 0px 0px 0px 1px var(--secondary-50);
+        color: var(--secondary-50);
+
+        &:hover {
+            box-shadow: inset 0px 0px 0px 1px var(--secondary-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--secondary-50);
+            border: var(--secondary-25);
+        }
+
+        &:disabled {
+            box-shadow: inset 0px 0px 0px 1px var(--secondary-0);
+        }
+
+        &[data-active=true] {
+            box-shadow: inset 0px 0px 0px 1px var(--secondary-75);
+        }
+    }
+
+    &.outline_info {
+        box-shadow: inset 0px 0px 0px 1px var(--info-50);
+        color: var(--info-50);
+
+        &:hover {
+            box-shadow: inset 0px 0px 0px 1px var(--info-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--info-50);
+            border: var(--info-25);
+        }
+
+        &:disabled {
+            box-shadow: inset 0px 0px 0px 1px var(--info-0);
+        }
+
+        &[data-active=true] {
+            box-shadow: inset 0px 0px 0px 1px var(--info-75);
+        }
+    }
+
+    &.outline_success {
+        box-shadow: inset 0px 0px 0px 1px var(--success-50);
+        color: var(--success-50);
+
+        &:hover {
+            box-shadow: inset 0px 0px 0px 1px var(--success-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--success-50);
+            border: var(--success-25);
+        }
+
+        &:disabled {
+            box-shadow: inset 0px 0px 0px 1px var(--success-0);
+        }
+
+        &[data-active=true] {
+            box-shadow: inset 0px 0px 0px 1px var(--success-75);
+        }
+    }
+
+    &.outline_warning {
+        box-shadow: inset 0px 0px 0px 1px var(--warning-50);
+        color: var(--warning-50);
+
+        &:hover {
+            box-shadow: inset 0px 0px 0px 1px var(--warning-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--warning-50);
+            border: var(--warning-25);
+        }
+
+        &:disabled {
+            box-shadow: inset 0px 0px 0px 1px var(--warning-0);
+        }
+
+        &[data-active=true] {
+            box-shadow: inset 0px 0px 0px 1px var(--warning-75);
+        }
+    }
+
+    &.outline_danger {
+        box-shadow: inset 0px 0px 0px 1px var(--danger-50);
+        color: var(--danger-50);
+
+        &:hover {
+            box-shadow: inset 0px 0px 0px 1px var(--danger-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--danger-50);
+            border: var(--danger-25);
+        }
+
+        &:disabled {
+            box-shadow: inset 0px 0px 0px 1px var(--danger-0);
+        }
+
+        &[data-active=true] {
+            box-shadow: inset 0px 0px 0px 1px var(--danger-75);
+        }
+    }
+
+    &.outline_dark {
+        box-shadow: inset 0px 0px 0px 1px var(--dark-50);
+        color: var(--dark-50);
+
+        &:hover {
+            box-shadow: inset 0px 0px 0px 1px var(--dark-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--dark-50);
+            border: var(--dark-25);
+        }
+
+        &:disabled {
+            box-shadow: inset 0px 0px 0px 1px var(--dark-0);
+        }
+
+        &[data-active=true] {
+            box-shadow: inset 0px 0px 0px 1px var(--dark-75);
+        }
+    }
+
+    &.outline_light {
+        box-shadow: inset 0px 0px 0px 1px var(--light-50);
+        color: var(--black);
+
+        &:hover {
+            box-shadow: inset 0px 0px 0px 1px var(--light-25);
+        }
+
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--light-50);
+            border: var(--light-25);
+        }
+
+        &:disabled {
+            box-shadow: inset 0px 0px 0px 1px var(--light-0);
+        }
+
+        &[data-active=true] {
+            box-shadow: inset 0px 0px 0px 1px var(--light-75);
+        }
+    }
+}
